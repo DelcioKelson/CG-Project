@@ -1,0 +1,4 @@
+/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles/rebuild_cache.dir
+/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles/glad.dir
+/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles/edit_cache.dir
+/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles/glad-generate-files.dir
