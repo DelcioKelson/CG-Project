@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ferramenta/Documents/3º2º/CG/0
+CMAKE_SOURCE_DIR = /home/ferramenta/Documents/3º2º/CG/CG-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ferramenta/Documents/3º2º/CG/0/Build
+CMAKE_BINARY_DIR = /home/ferramenta/Documents/3º2º/CG/CG-Project/Build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Asteroids.dir/depend.make
@@ -59,146 +59,146 @@ include CMakeFiles/Asteroids.dir/flags.make
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.o: ../Asteroids/Sources/asteroid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.o -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/asteroid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.o -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/asteroid.cpp
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/asteroid.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/asteroid.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/asteroid.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/asteroid.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/asteroid.cpp.s
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.o: ../Asteroids/Sources/collison.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.o -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/collison.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.o -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/collison.cpp
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/collison.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/collison.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/collison.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/collison.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/collison.cpp.s
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.o: ../Asteroids/Sources/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.o -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.o -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/main.cpp
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/main.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/main.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/main.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/main.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/main.cpp.s
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.o: ../Asteroids/Sources/mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.o -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.o -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/mesh.cpp
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/mesh.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/mesh.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/mesh.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/mesh.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/mesh.cpp.s
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.o: ../Asteroids/Sources/model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.o -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.o -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/model.cpp
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/model.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/model.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/model.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/model.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/model.cpp.s
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.o: ../Asteroids/Sources/projectile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.o -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/projectile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.o -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/projectile.cpp
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/projectile.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/projectile.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/projectile.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/projectile.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/projectile.cpp.s
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.o: ../Asteroids/Sources/shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.o -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.o -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/shader.cpp
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/shader.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/shader.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/shader.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/shader.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/shader.cpp.s
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.o: ../Asteroids/Sources/spaceShip.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.o -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/spaceShip.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.o -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/spaceShip.cpp
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/spaceShip.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/spaceShip.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/spaceShip.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/spaceShip.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/spaceShip.cpp.s
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.o: ../Asteroids/Sources/stb_image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.o -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/stb_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.o -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/stb_image.cpp
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/stb_image.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/stb_image.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/stb_image.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/stb_image.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/stb_image.cpp.s
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.o: ../Asteroids/Sources/textRenderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.o -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/textRenderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.o -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.cpp
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/textRenderer.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.cpp > CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/textRenderer.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.cpp -o CMakeFiles/Asteroids.dir/Asteroids/Sources/textRenderer.cpp.s
 
 CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.o: CMakeFiles/Asteroids.dir/flags.make
 CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.o: ../Asteroids/Vendor/glad/src/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.o   -c /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Vendor/glad/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.o   -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/src/glad.c
 
 CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Vendor/glad/src/glad.c > CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/src/glad.c > CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.i
 
 CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/0/Asteroids/Vendor/glad/src/glad.c -o CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/src/glad.c -o CMakeFiles/Asteroids.dir/Asteroids/Vendor/glad/src/glad.c.s
 
 # Object files for target Asteroids
 Asteroids_OBJECTS = \
@@ -240,7 +240,7 @@ Asteroids/Asteroids: /usr/lib/x86_64-linux-gnu/libpng.so
 Asteroids/Asteroids: /usr/lib/x86_64-linux-gnu/libz.so
 Asteroids/Asteroids: /usr/lib/x86_64-linux-gnu/libharfbuzz.so
 Asteroids/Asteroids: CMakeFiles/Asteroids.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Asteroids/Asteroids"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Asteroids/Asteroids"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Asteroids.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -253,6 +253,6 @@ CMakeFiles/Asteroids.dir/clean:
 .PHONY : CMakeFiles/Asteroids.dir/clean
 
 CMakeFiles/Asteroids.dir/depend:
-	cd /home/ferramenta/Documents/3º2º/CG/0/Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ferramenta/Documents/3º2º/CG/0 /home/ferramenta/Documents/3º2º/CG/0 /home/ferramenta/Documents/3º2º/CG/0/Build /home/ferramenta/Documents/3º2º/CG/0/Build /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles/Asteroids.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ferramenta/Documents/3º2º/CG/CG-Project/Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ferramenta/Documents/3º2º/CG/CG-Project /home/ferramenta/Documents/3º2º/CG/CG-Project /home/ferramenta/Documents/3º2º/CG/CG-Project/Build /home/ferramenta/Documents/3º2º/CG/CG-Project/Build /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/Asteroids.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Asteroids.dir/depend
 

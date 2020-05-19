@@ -31,7 +31,7 @@ namespace SpaceShips {
     SpaceShip::SpaceShip(const char* vertexShader, const char* fragmentShader) : shader(vertexShader, fragmentShader)
     {
         glm::mat4 modelMatrix = glm::mat4(1.0f);
-        modelMatrix = glm::scale(modelMatrix, glm::vec3(0.006, 0.006, 0.006));
+        modelMatrix = glm::scale(modelMatrix, glm::vec3(0.1, 0.1, 0.1));
 
         /*
         * Buffer configuration
@@ -77,7 +77,7 @@ namespace SpaceShips {
 
         // configure transformation matrices
         glm::mat4 projection = glm::perspective(glm::radians(45.f), width / height, 0.1f, 1000.0f);
-        projection = glm::translate(projection, glm::vec3(xOffSet, yOffSet, 0.0f));
+        projection = glm::translate(projection, glm::vec3(-xOffSet, -yOffSet, 0.0f));
         projection = glm::rotate(projection, angle+glm::radians(90.f), glm::vec3(0.0, 0.0, 1.0));
         projection = glm::translate(projection, glm::vec3(-xOffSet, -yOffSet, 0.0f));
         projection = glm::translate(projection, glm::vec3(xOffSet, yOffSet, 0.0f));

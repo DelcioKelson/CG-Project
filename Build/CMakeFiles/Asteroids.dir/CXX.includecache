@@ -440,15 +440,15 @@ intrin.h
 arm_neon.h
 -
 
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/asteroid.cpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/asteroid.cpp
 asteroid.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/asteroid.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/asteroid.hpp
 
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/collison.cpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/collison.cpp
 collision.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/collision.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/collision.hpp
 
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/main.cpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/main.cpp
 cstdio
 -
 cstdlib
@@ -470,31 +470,31 @@ math.h
 time.h
 -
 shader.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/shader.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/shader.hpp
 stb_image.h
 -
 camera.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/camera.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/camera.hpp
 textRenderer.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/textRenderer.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.hpp
 spaceShip.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/spaceShip.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/spaceShip.hpp
 projectile.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/projectile.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/projectile.hpp
 asteroid.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/asteroid.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/asteroid.hpp
 textRenderer.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/textRenderer.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.hpp
 
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/mesh.cpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/mesh.cpp
 mesh.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/mesh.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/mesh.hpp
 
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/model.cpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/model.cpp
 model.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/model.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/model.hpp
 
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/projectile.cpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/projectile.cpp
 glad/glad.h
 -
 glm/glm.hpp
@@ -508,11 +508,11 @@ glm/gtc/matrix_access.hpp
 GLFW/glfw3.h
 -
 projectile.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/projectile.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/projectile.hpp
 
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/shader.cpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/shader.cpp
 shader.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/shader.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/shader.hpp
 unistd.h
 -
 string
@@ -524,11 +524,11 @@ sstream
 iostream
 -
 
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/spaceShip.cpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/spaceShip.cpp
 spaceShip.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/spaceShip.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/spaceShip.hpp
 shader.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/shader.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/shader.hpp
 glm/glm.hpp
 -
 glm/gtc/matrix_transform.hpp
@@ -540,13 +540,13 @@ stb_image.h
 iostream
 -
 
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/stb_image.cpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/stb_image.cpp
 stb_image.h
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/stb_image.h
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/stb_image.h
 
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/textRenderer.cpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.cpp
 textRenderer.hpp
-/home/ferramenta/Documents/3º2º/CG/0/Asteroids/Sources/textRenderer.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.hpp
 
 Asteroids/Vendor/assimp/include/assimp/config.h
 

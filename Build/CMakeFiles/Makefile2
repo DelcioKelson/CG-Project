@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ferramenta/Documents/3º2º/CG/0
+CMAKE_SOURCE_DIR = /home/ferramenta/Documents/3º2º/CG/CG-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ferramenta/Documents/3º2º/CG/0/Build
+CMAKE_BINARY_DIR = /home/ferramenta/Documents/3º2º/CG/CG-Project/Build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -215,14 +215,14 @@ CMakeFiles/Asteroids.dir/all: Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir
 CMakeFiles/Asteroids.dir/all: Asteroids/Vendor/freetype/CMakeFiles/freetype.dir/all
 	$(MAKE) -f CMakeFiles/Asteroids.dir/build.make CMakeFiles/Asteroids.dir/depend
 	$(MAKE) -f CMakeFiles/Asteroids.dir/build.make CMakeFiles/Asteroids.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=1,2,3,4 "Built target Asteroids"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=1,2,3,4 "Built target Asteroids"
 .PHONY : CMakeFiles/Asteroids.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Asteroids.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 100
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 100
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Asteroids.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 0
 .PHONY : CMakeFiles/Asteroids.dir/rule
 
 # Convenience name for target.
@@ -242,14 +242,14 @@ CMakeFiles/Asteroids.dir/clean:
 Asteroids/Vendor/glfw/CMakeFiles/uninstall.dir/all:
 	$(MAKE) -f Asteroids/Vendor/glfw/CMakeFiles/uninstall.dir/build.make Asteroids/Vendor/glfw/CMakeFiles/uninstall.dir/depend
 	$(MAKE) -f Asteroids/Vendor/glfw/CMakeFiles/uninstall.dir/build.make Asteroids/Vendor/glfw/CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : Asteroids/Vendor/glfw/CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 Asteroids/Vendor/glfw/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 Asteroids/Vendor/glfw/CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 0
 .PHONY : Asteroids/Vendor/glfw/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -269,14 +269,14 @@ Asteroids/Vendor/glfw/CMakeFiles/uninstall.dir/clean:
 Asteroids/Vendor/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) -f Asteroids/Vendor/glfw/src/CMakeFiles/glfw.dir/build.make Asteroids/Vendor/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) -f Asteroids/Vendor/glfw/src/CMakeFiles/glfw.dir/build.make Asteroids/Vendor/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=95,96,97,98,99,100 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=95,96,97,98,99,100 "Built target glfw"
 .PHONY : Asteroids/Vendor/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 Asteroids/Vendor/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 Asteroids/Vendor/glfw/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 0
 .PHONY : Asteroids/Vendor/glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
@@ -296,14 +296,14 @@ Asteroids/Vendor/glfw/src/CMakeFiles/glfw.dir/clean:
 Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all:
 	$(MAKE) -f Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build.make Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/depend
 	$(MAKE) -f Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build.make Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num= "Built target IrrXML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num= "Built target IrrXML"
 .PHONY : Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
 
 # Build rule for subdir invocation for target.
 Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 0
 .PHONY : Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/rule
 
 # Convenience name for target.
@@ -323,14 +323,14 @@ Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/clean:
 Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir/all: Asteroids/Vendor/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
 	$(MAKE) -f Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir/build.make Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir/depend
 	$(MAKE) -f Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir/build.make Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target assimp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target assimp"
 .PHONY : Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir/all
 
 # Build rule for subdir invocation for target.
 Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 75
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 75
 	$(MAKE) -f CMakeFiles/Makefile2 Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 0
 .PHONY : Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir/rule
 
 # Convenience name for target.
@@ -350,14 +350,14 @@ Asteroids/Vendor/assimp/code/CMakeFiles/assimp.dir/clean:
 Asteroids/Vendor/freetype/CMakeFiles/freetype.dir/all:
 	$(MAKE) -f Asteroids/Vendor/freetype/CMakeFiles/freetype.dir/build.make Asteroids/Vendor/freetype/CMakeFiles/freetype.dir/depend
 	$(MAKE) -f Asteroids/Vendor/freetype/CMakeFiles/freetype.dir/build.make Asteroids/Vendor/freetype/CMakeFiles/freetype.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles --progress-num=80,81,82,83,84,85,86,87,88,89,90,91,92,93,94 "Built target freetype"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles --progress-num=80,81,82,83,84,85,86,87,88,89,90,91,92,93,94 "Built target freetype"
 .PHONY : Asteroids/Vendor/freetype/CMakeFiles/freetype.dir/all
 
 # Build rule for subdir invocation for target.
 Asteroids/Vendor/freetype/CMakeFiles/freetype.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 Asteroids/Vendor/freetype/CMakeFiles/freetype.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/0/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles 0
 .PHONY : Asteroids/Vendor/freetype/CMakeFiles/freetype.dir/rule
 
 # Convenience name for target.

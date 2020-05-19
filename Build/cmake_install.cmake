@@ -1,4 +1,4 @@
-# Install script for directory: /home/ferramenta/Documents/3º2º/CG/0
+# Install script for directory: /home/ferramenta/Documents/3º2º/CG/CG-Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ferramenta/Documents/3º2º/CG/0/Build/Asteroids/Vendor/glfw/cmake_install.cmake")
-  include("/home/ferramenta/Documents/3º2º/CG/0/Build/Asteroids/Vendor/assimp/cmake_install.cmake")
-  include("/home/ferramenta/Documents/3º2º/CG/0/Build/Asteroids/Vendor/freetype/cmake_install.cmake")
+  include("/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/Asteroids/Vendor/glfw/cmake_install.cmake")
+  include("/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/Asteroids/Vendor/assimp/cmake_install.cmake")
+  include("/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/Asteroids/Vendor/freetype/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ferramenta/Documents/3º2º/CG/0/Build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
