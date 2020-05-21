@@ -1,4 +1,4 @@
-# Install script for directory: /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad
+# Install script for directory: /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

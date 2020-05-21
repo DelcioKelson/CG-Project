@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad
+CMAKE_SOURCE_DIR = /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad
+CMAKE_BINARY_DIR = /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad
 
 # Utility rule file for glad-generate-files.
 
@@ -58,8 +58,8 @@ CMakeFiles/glad-generate-files: include/glad/glad.h
 
 
 src/glad.c:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GLAD"
-	/usr/bin/python -m glad --profile=compatibility --out-path=/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad --api= --generator=c --extensions= --spec=gl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GLAD"
+	/usr/bin/python -m glad --profile=compatibility --out-path=/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad --api= --generator=c --extensions= --spec=gl
 
 include/glad/glad.h: src/glad.c
 	@$(CMAKE_COMMAND) -E touch_nocreate include/glad/glad.h
@@ -81,6 +81,6 @@ CMakeFiles/glad-generate-files.dir/clean:
 .PHONY : CMakeFiles/glad-generate-files.dir/clean
 
 CMakeFiles/glad-generate-files.dir/depend:
-	cd /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles/glad-generate-files.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles/glad-generate-files.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/glad-generate-files.dir/depend
 

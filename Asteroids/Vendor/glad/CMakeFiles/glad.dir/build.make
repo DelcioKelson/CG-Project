@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad
+CMAKE_SOURCE_DIR = /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad
+CMAKE_BINARY_DIR = /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad
 
 # Include any dependencies generated for this target.
 include CMakeFiles/glad.dir/depend.make
@@ -58,24 +58,24 @@ include CMakeFiles/glad.dir/progress.make
 include CMakeFiles/glad.dir/flags.make
 
 src/glad.c:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GLAD"
-	/usr/bin/python -m glad --profile=compatibility --out-path=/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad --api= --generator=c --extensions= --spec=gl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GLAD"
+	/usr/bin/python -m glad --profile=compatibility --out-path=/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad --api= --generator=c --extensions= --spec=gl
 
 include/glad/glad.h: src/glad.c
 	@$(CMAKE_COMMAND) -E touch_nocreate include/glad/glad.h
 
 CMakeFiles/glad.dir/src/glad.c.o: CMakeFiles/glad.dir/flags.make
 CMakeFiles/glad.dir/src/glad.c.o: src/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/glad.dir/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glad.dir/src/glad.c.o   -c /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/glad.dir/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glad.dir/src/glad.c.o   -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/src/glad.c
 
 CMakeFiles/glad.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glad.dir/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/src/glad.c > CMakeFiles/glad.dir/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/src/glad.c > CMakeFiles/glad.dir/src/glad.c.i
 
 CMakeFiles/glad.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glad.dir/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/src/glad.c -o CMakeFiles/glad.dir/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/src/glad.c -o CMakeFiles/glad.dir/src/glad.c.s
 
 # Object files for target glad
 glad_OBJECTS = \
@@ -87,7 +87,7 @@ glad_EXTERNAL_OBJECTS =
 libglad.a: CMakeFiles/glad.dir/src/glad.c.o
 libglad.a: CMakeFiles/glad.dir/build.make
 libglad.a: CMakeFiles/glad.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libglad.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libglad.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glad.dir/link.txt --verbose=$(VERBOSE)
 
@@ -102,6 +102,6 @@ CMakeFiles/glad.dir/clean:
 
 CMakeFiles/glad.dir/depend: src/glad.c
 CMakeFiles/glad.dir/depend: include/glad/glad.h
-	cd /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles/glad.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles/glad.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/glad.dir/depend
 

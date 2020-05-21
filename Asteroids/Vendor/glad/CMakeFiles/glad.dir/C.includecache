@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/src/glad.c
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/src/glad.c
 stdio.h
 -
 stdlib.h

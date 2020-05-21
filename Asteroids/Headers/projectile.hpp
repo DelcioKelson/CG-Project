@@ -8,7 +8,7 @@
 #include "collision.hpp"
 using namespace Collision;
 
-const float PROJECTILE_SPEED = 0.07;
+const float PROJECTILE_SPEED = 0.01;
 const float PROJECTILE_SPAWN_COOLDOWN = 0.4;
 const float PROJECTILE_MOVEMENT_COOLDOWN = 0.0003;
 const float PROJECTILE_SCALE = 0.05;

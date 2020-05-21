@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/include 
+C_INCLUDES = -I/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/include 
 

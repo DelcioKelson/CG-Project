@@ -9,7 +9,8 @@
 
 #include <iostream>
 
-namespace SpaceShips {
+namespace SpaceShips
+{
     /*
     * Ship Model
     */
@@ -28,10 +29,10 @@ namespace SpaceShips {
     float max_Y = 2.5;
 
     // Constructor
-    SpaceShip::SpaceShip(const char* vertexShader, const char* fragmentShader) : shader(vertexShader, fragmentShader)
+    SpaceShip::SpaceShip(const char *vertexShader, const char *fragmentShader) : shader(vertexShader, fragmentShader)
     {
         glm::mat4 modelMatrix = glm::mat4(1.0f);
-        modelMatrix = glm::scale(modelMatrix, glm::vec3(0.1, 0.1, 0.1));
+        modelMatrix = glm::scale(modelMatrix, glm::vec3(-0.1, -0.1, -0.1));
 
         /*
         * Buffer configuration
@@ -47,13 +48,13 @@ namespace SpaceShips {
             glBindVertexArray(VAO);
 
             glEnableVertexAttribArray(3);
-            glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void*)0);
+            glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *)0);
             glEnableVertexAttribArray(4);
-            glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void*)(sizeof(glm::vec4)));
+            glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *)(sizeof(glm::vec4)));
             glEnableVertexAttribArray(5);
-            glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void*)(2 * sizeof(glm::vec4)));
+            glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *)(2 * sizeof(glm::vec4)));
             glEnableVertexAttribArray(6);
-            glVertexAttribPointer(6, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void*)(3 * sizeof(glm::vec4)));
+            glVertexAttribPointer(6, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *)(3 * sizeof(glm::vec4)));
             glBindBuffer(GL_ARRAY_BUFFER, 0);
 
             glVertexAttribDivisor(3, 1);
@@ -77,15 +78,14 @@ namespace SpaceShips {
 
         // configure transformation matrices
         glm::mat4 projection = glm::perspective(glm::radians(45.f), width / height, 0.1f, 1000.0f);
-        projection = glm::translate(projection, glm::vec3(-xOffSet, -yOffSet, 0.0f));
-        projection = glm::rotate(projection, angle+glm::radians(90.f), glm::vec3(0.0, 0.0, 1.0));
+        projection = glm::translate(projection, glm::vec3(xOffSet, yOffSet, 0.0f));
+        projection = glm::rotate(projection, angle + glm::radians(90.f), glm::vec3(0.0, 0.0, 1.0));
         projection = glm::translate(projection, glm::vec3(-xOffSet, -yOffSet, 0.0f));
         projection = glm::translate(projection, glm::vec3(xOffSet, yOffSet, 0.0f));
         glm::mat4 view = glm::lookAt(
             glm::vec3(0.0f, 6.0f, 0.0f), // Looking from top
             glm::vec3(0.0f, 0.0f, 0.0f),
-            glm::vec3(0.0f, 0.0f, 1.0f)
-        );
+            glm::vec3(0.0f, 0.0f, 1.0f));
         shader.setMat4("projection", projection);
         shader.setMat4("view", view);
 
@@ -95,7 +95,8 @@ namespace SpaceShips {
 
     void SpaceShip::moveForward()
     {
-        if ((lastMovementTimestamp+SHIP_MOVEMENT_COOLDOWN) > glfwGetTime()) return;
+        if ((lastMovementTimestamp + SHIP_MOVEMENT_COOLDOWN) > glfwGetTime())
+            return;
 
         lastMovementTimestamp = glfwGetTime();
 
@@ -103,34 +104,35 @@ namespace SpaceShips {
         yOffSet += sin(angle) * speed;
 
         adjustOffSets();
-        
+
         shader.setFloat("xOffset", xOffSet);
         shader.setFloat("yOffset", yOffSet);
     }
 
     void SpaceShip::moveBackward()
     {
-        if ((lastMovementTimestamp+SHIP_MOVEMENT_COOLDOWN) > glfwGetTime()) return;
+        if ((lastMovementTimestamp + SHIP_MOVEMENT_COOLDOWN) > glfwGetTime())
+            return;
 
         lastMovementTimestamp = glfwGetTime();
 
         xOffSet -= cos(angle) * speed;
         yOffSet -= sin(angle) * speed;
-    
+
         adjustOffSets();
-        
+
         shader.setFloat("xOffset", xOffSet);
         shader.setFloat("yOffset", yOffSet);
     }
 
     void SpaceShip::adjustOffSets()
     {
-        if(xOffSet > max_X || xOffSet < -max_X)
+        if (xOffSet > max_X || xOffSet < -max_X)
         {
             xOffSet *= -1.0f;
         }
 
-        if(yOffSet > max_Y || yOffSet < -max_Y)
+        if (yOffSet > max_Y || yOffSet < -max_Y)
         {
             yOffSet *= -1.0f;
         }
@@ -138,7 +140,8 @@ namespace SpaceShips {
 
     void SpaceShip::rotateLeft()
     {
-        if ((lastRotationTimestamp+SHIP_ROTATION_COOLDOWN) > glfwGetTime()) return;
+        if ((lastRotationTimestamp + SHIP_ROTATION_COOLDOWN) > glfwGetTime())
+            return;
 
         lastRotationTimestamp = glfwGetTime();
         angle += rotationSpeed;
@@ -146,18 +149,20 @@ namespace SpaceShips {
 
     void SpaceShip::rotateRight()
     {
-        if ((lastRotationTimestamp+SHIP_ROTATION_COOLDOWN) > glfwGetTime()) return;
+        if ((lastRotationTimestamp + SHIP_ROTATION_COOLDOWN) > glfwGetTime())
+            return;
 
         lastRotationTimestamp = glfwGetTime();
         angle -= rotationSpeed;
     }
 
     void SpaceShip::use() const
-    { 
+    {
         shader.use();
     }
 
-    void loadModel(string modelPath) {
+    void loadModel(string modelPath)
+    {
         model = new Model(modelPath);
     }
-}
+} // namespace SpaceShips

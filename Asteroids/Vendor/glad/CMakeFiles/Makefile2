@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad
+CMAKE_SOURCE_DIR = /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad
+CMAKE_BINARY_DIR = /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -75,14 +75,14 @@ clean: CMakeFiles/glad-generate-files.dir/clean
 CMakeFiles/glad.dir/all: CMakeFiles/glad-generate-files.dir/all
 	$(MAKE) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
 	$(MAKE) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles --progress-num=1,2,3 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles --progress-num=1,2,3 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/glad.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/glad.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles 0
 .PHONY : CMakeFiles/glad.dir/rule
 
 # Convenience name for target.
@@ -102,14 +102,14 @@ CMakeFiles/glad.dir/clean:
 CMakeFiles/glad-generate-files.dir/all:
 	$(MAKE) -f CMakeFiles/glad-generate-files.dir/build.make CMakeFiles/glad-generate-files.dir/depend
 	$(MAKE) -f CMakeFiles/glad-generate-files.dir/build.make CMakeFiles/glad-generate-files.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles --progress-num=4 "Built target glad-generate-files"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles --progress-num=4 "Built target glad-generate-files"
 .PHONY : CMakeFiles/glad-generate-files.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/glad-generate-files.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/glad-generate-files.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/Asteroids/Asteroids/Vendor/glad/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Vendor/glad/CMakeFiles 0
 .PHONY : CMakeFiles/glad-generate-files.dir/rule
 
 # Convenience name for target.
