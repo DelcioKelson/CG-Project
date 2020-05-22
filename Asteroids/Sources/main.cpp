@@ -4,7 +4,6 @@
 #include <iostream>
 #include <sstream>
 
-
 #include "camera.hpp"
 
 #include "textRenderer.hpp"
@@ -20,7 +19,7 @@ using namespace SpaceShips;
 
 TextRenderer *textDisplay;
 
-float shipRadius = 0.15;
+float shipRadius = 0.20;
 
 const float mWidth = 1024;
 const float mHeight = 578;
@@ -30,8 +29,10 @@ float lastKeyPressTimestamp = 0;
 const int GAME_MAX_DIFFFICULTY = 2;
 const int GAME_MAX_LIVES = 3;
 const float MENU_KEY_PRESS_COOLDOWN = 0.2;
+const int GAME_SUPER_PROJECTILES = 10;
 
 int lives = GAME_MAX_LIVES;
+int superProjectiles = GAME_SUPER_PROJECTILES;
 
 SpaceShips::SpaceShip *spaceShip;
 
@@ -62,6 +63,7 @@ void updateGameState(GameState state)
 
         score = 0.0;
         lives = GAME_MAX_LIVES;
+        superProjectiles = GAME_SUPER_PROJECTILES;
         spaceShip->xOffSet = 0;
         spaceShip->yOffSet = 0;
         break;
@@ -84,8 +86,6 @@ void checkShipCollisions()
 {
     vector<Asteroid *> *asteroids = getAsteroids();
 
-    AABB hitBox = asteroidHitbox();
-
     for (unsigned long int i = 0; i < asteroids->size(); i++)
     {
 
@@ -94,7 +94,7 @@ void checkShipCollisions()
 
         float distance = sqrt(width * width + height * height);
 
-        float minDistanceForImpact = hitBox.max.x + shipRadius;
+        float minDistanceForImpact = asteroids->at(i)->hitBox.max.x + shipRadius;
 
         if (minDistanceForImpact > distance)
         {
@@ -116,7 +116,6 @@ void checkProjectileCollisions()
     vector<Asteroid *> aCollisions;
     vector<Projectile *> pCollisions;
 
-    AABB aHitBox = asteroidHitbox();
     AABB pHitBox = projectileHitbox();
 
     for (long unsigned int i = 0; i < projectiles->size(); i++)
@@ -124,17 +123,25 @@ void checkProjectileCollisions()
         for (long unsigned int j = 0; j < asteroids->size(); j++)
         {
 
-            float width = abs(projectiles->at(i)->xOffSet - asteroids->at(j)->xOffSet);
-            float height = abs(projectiles->at(i)->yOffSet - asteroids->at(j)->yOffSet);
-
-            float distance = sqrt(width * width + height * height);
-
-            float minDistanceForImpact = aHitBox.max.x + pHitBox.max.x;
-
-            if (minDistanceForImpact > distance)
+            try
             {
-                aCollisions.push_back(asteroids->at(j));
-                pCollisions.push_back(projectiles->at(i));
+                float width = abs(projectiles->at(i)->xOffSet - asteroids->at(j)->xOffSet);
+                float height = abs(projectiles->at(i)->yOffSet - asteroids->at(j)->yOffSet);
+
+                float
+                    distance = sqrt(width * width + height * height);
+
+                float minDistanceForImpact = asteroids->at(i)->hitBox.max.x + pHitBox.max.x;
+
+                if (minDistanceForImpact > distance)
+                {
+                    aCollisions.push_back(asteroids->at(j));
+                    pCollisions.push_back(projectiles->at(i));
+                }
+            }
+
+            catch (const std::out_of_range &e)
+            {
             }
         }
     }
@@ -169,8 +176,6 @@ void checkAsteroidCollisions()
 {
     vector<Asteroid *> *asteroids = getAsteroids();
 
-    AABB hitBox = asteroidHitbox();
-
     for (long unsigned int a1 = 0; a1 < asteroids->size(); a1++)
     {
         for (long unsigned int a2 = 0; a2 < asteroids->size(); a2++)
@@ -183,7 +188,7 @@ void checkAsteroidCollisions()
 
             float distance = sqrt(width * width + height * height);
 
-            float minDistanceForImpact = 2 * hitBox.max.x;
+            float minDistanceForImpact = asteroids->at(a1)->hitBox.max.x + asteroids->at(a2)->hitBox.max.x;
 
             if (minDistanceForImpact >= distance)
             {
@@ -226,6 +231,8 @@ void Render()
         textDisplay->renderText(std::to_string(score), 10.0f, 10.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
 
         textDisplay->renderText("Lives: " + std::to_string(lives), mWidth - 125.0f, 10.0f, 0.5f, glm::vec3(0.5, 0.5f, 0.0f));
+        
+        textDisplay->renderText("Special: " + std::to_string(superProjectiles), 10, 50.0f, 0.5f, glm::vec3(0.5, 0.8f, 0.2f));
 
         if (State == GAME_OVER)
         {
@@ -266,6 +273,7 @@ void Render()
 
 void ProcessInput(GLFWwindow *window)
 {
+    int aux = 0;
     switch (State)
     {
     case GAME_ACTIVE:
@@ -333,6 +341,15 @@ void ProcessInput(GLFWwindow *window)
         break;
     }
 }
+void key_callback(GLFWwindow *window, int key, int scancode, int action, int mods)
+{
+    if (key == GLFW_KEY_S && action == GLFW_PRESS && superProjectiles != 0)
+    {
+        superProjectiles--;
+
+        Projectiles::fireProjectile3(mWidth, mHeight, spaceShip->xOffSet, spaceShip->yOffSet, spaceShip->angle);
+    }
+}
 
 int main()
 {
@@ -363,6 +380,7 @@ int main()
 
     // Create Context and Load OpenGL Functions
     glfwMakeContextCurrent(window);
+    glfwSetKeyCallback(window, key_callback);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {

@@ -19,6 +19,10 @@ glm/gtc/matrix_access.hpp
 -
 GLFW/glfw3.h
 -
+math.h
+-
+ctime
+-
 shader.hpp
 ../Asteroids/Headers/shader.hpp
 model.hpp
@@ -1807,10 +1811,6 @@ intrin.h
 -
 arm_neon.h
 -
-
-/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/asteroid.cpp
-asteroid.hpp
-/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/asteroid.hpp
 
 /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/main.cpp
 cstdio

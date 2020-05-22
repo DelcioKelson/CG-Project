@@ -7,11 +7,12 @@
 
 #include "projectile.hpp"
 
-namespace Projectiles {
+namespace Projectiles
+{
     /*
     * Where Projectiles will be stored
     */
-    vector<Projectile*> projectiles;
+    vector<Projectile *> projectiles;
 
     /*
     * Global Model, that is used by all Projectile Objects
@@ -28,11 +29,10 @@ namespace Projectiles {
     */
     float lastProjectileTimestamp = 0;
 
-    Projectile::Projectile(float width, float height, float x, float y, float angle) : 
-        shader("../Asteroids/Shaders/projectile.vs", "../Asteroids/Shaders/projectile.fs"),
-        xOffSet(x),
-        yOffSet(y),
-        angle(angle)
+    Projectile::Projectile(float width, float height, float x, float y, float angle) : shader("../Asteroids/Shaders/projectile.vs", "../Asteroids/Shaders/projectile.fs"),
+                                                                                       xOffSet(x),
+                                                                                       yOffSet(y),
+                                                                                       angle(angle)
     {
         glm::mat4 modelMatrix = glm::mat4(1.0f);
         modelMatrix = glm::scale(modelMatrix, glm::vec3(PROJECTILE_SCALE, PROJECTILE_SCALE, PROJECTILE_SCALE));
@@ -51,13 +51,13 @@ namespace Projectiles {
             glBindVertexArray(VAO);
             // set attribute pointers for matrix (4 times vec4)
             glEnableVertexAttribArray(3);
-            glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void*)0);
+            glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *)0);
             glEnableVertexAttribArray(4);
-            glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void*)(sizeof(glm::vec4)));
+            glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *)(sizeof(glm::vec4)));
             glEnableVertexAttribArray(5);
-            glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void*)(2 * sizeof(glm::vec4)));
+            glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *)(2 * sizeof(glm::vec4)));
             glEnableVertexAttribArray(6);
-            glVertexAttribPointer(6, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void*)(3 * sizeof(glm::vec4)));
+            glVertexAttribPointer(6, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *)(3 * sizeof(glm::vec4)));
             glBindBuffer(GL_ARRAY_BUFFER, 0);
 
             glVertexAttribDivisor(3, 1);
@@ -71,7 +71,8 @@ namespace Projectiles {
         }
     }
 
-    Projectile::~Projectile() {
+    Projectile::~Projectile()
+    {
         delete model;
     }
 
@@ -90,12 +91,12 @@ namespace Projectiles {
         glm::mat4 view = glm::lookAt(
             glm::vec3(0.0f, 6.0f, 0.0f), // Looking from top
             glm::vec3(0.0f, 0.0f, 0.0f),
-            glm::vec3(0.0f, 0.0f, 1.0f)
-        );
+            glm::vec3(0.0f, 0.0f, 1.0f));
         shader.setMat4("projection", projection);
         shader.setMat4("view", view);
 
-        if(!camera.isInsideFrustum(projection * view)) {
+        if (!camera.isInsideFrustum(projection * view))
+        {
             return false;
         }
 
@@ -107,30 +108,33 @@ namespace Projectiles {
 
     void Projectile::dislocateProjectile()
     {
-        if (projectileMovementTimestamp+PROJECTILE_MOVEMENT_COOLDOWN > glfwGetTime())
+        if (projectileMovementTimestamp + PROJECTILE_MOVEMENT_COOLDOWN > glfwGetTime())
             return;
-        
+
         projectileMovementTimestamp = glfwGetTime();
 
         xOffSet += cos(angle) * PROJECTILE_SPEED;
         yOffSet += sin(angle) * PROJECTILE_SPEED;
-        
+
         shader.setFloat("xOffset", xOffSet);
         shader.setFloat("yOffset", yOffSet);
     }
 
-    void loadModel(string modelPath) {
+    void loadModel(string modelPath)
+    {
         model = new Model(modelPath);
         hitBox = getAABB(model->meshes.at(0), PROJECTILE_SCALE);
     }
 
-    AABB projectileHitbox() {
+    AABB projectileHitbox()
+    {
         return hitBox;
     }
 
     bool fireProjectile(float width, float height, float x, float y, float angle)
     {
-        if (readyToFire()) {
+        if (readyToFire())
+        {
             lastProjectileTimestamp = glfwGetTime();
             projectiles.push_back(new Projectile(width, height, x, y, angle));
         }
@@ -138,21 +142,34 @@ namespace Projectiles {
         return false;
     }
 
+    bool fireProjectile3(float width, float height, float x, float y, float angle)
+    {
+        if (readyToFire())
+        {
+            lastProjectileTimestamp = glfwGetTime();
+
+            projectiles.push_back(new Projectile(width, height, x, y, angle-0.2));
+            projectiles.push_back(new Projectile(width, height, x, y, angle));
+            projectiles.push_back(new Projectile(width, height, x, y, angle+0.2));
+        }
+        return false;
+    }
+
     void renderProjectiles(float width, float height, Camera camera)
     {
-        for(long unsigned int i = 0; i < projectiles.size(); i++)
+        for (long unsigned int i = 0; i < projectiles.size(); i++)
         {
-            if(!projectiles.at(i)->render(width, height, camera))
-                projectiles.erase(projectiles.begin()+i);
+            if (!projectiles.at(i)->render(width, height, camera))
+                projectiles.erase(projectiles.begin() + i);
         }
     }
 
     bool readyToFire()
     {
-        return (glfwGetTime() > lastProjectileTimestamp+PROJECTILE_SPAWN_COOLDOWN);
+        return (glfwGetTime() > lastProjectileTimestamp + PROJECTILE_SPAWN_COOLDOWN);
     }
 
-    vector<Projectile*> * getProjectiles()
+    vector<Projectile *> *getProjectiles()
     {
         return &projectiles;
     }
@@ -161,4 +178,4 @@ namespace Projectiles {
     {
         projectiles.clear();
     }
-}
+} // namespace Projectiles
