@@ -9,7 +9,7 @@ Mesh::Mesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture
     setupMesh();
 }
 
-
+ // Generate and Load Buffers and Vertex Array
 void Mesh::setupMesh()
 {
     glGenVertexArrays(1, &VAO);
@@ -38,6 +38,7 @@ void Mesh::setupMesh()
     glBindVertexArray(0);
 }
 
+ // Draw a selected object
 void Mesh::Draw(Shader shader) 
 {
     // bind appropriate textures

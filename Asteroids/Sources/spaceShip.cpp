@@ -93,6 +93,10 @@ namespace SpaceShips
         model->Draw(shader);
     }
 
+
+    // ------------------------------------------------------------------------
+    // Manipulation of SpaceShip
+
     void SpaceShip::moveForward()
     {
         if ((lastMovementTimestamp + SHIP_MOVEMENT_COOLDOWN) > glfwGetTime())
@@ -125,6 +129,7 @@ namespace SpaceShips
         shader.setFloat("yOffset", yOffSet);
     }
 
+    // Create a limit of spaceship
     void SpaceShip::adjustOffSets()
     {
         if (xOffSet > max_X || xOffSet < -max_X)
@@ -160,7 +165,9 @@ namespace SpaceShips
     {
         shader.use();
     }
+    // ------------------------------------------------------------------------
 
+    // Create and load model
     void loadModel(string modelPath)
     {
         model = new Model(modelPath);

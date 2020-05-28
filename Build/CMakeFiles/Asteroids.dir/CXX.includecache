@@ -246,6 +246,12 @@ types.h
 defs.h
 ../Asteroids/Vendor/assimp/include/assimp/defs.h
 
+../Asteroids/Vendor/assimp/include/assimp/quaternion.inl
+quaternion.h
+../Asteroids/Vendor/assimp/include/assimp/quaternion.h
+cmath
+-
+
 ../Asteroids/Vendor/assimp/include/assimp/scene.h
 types.h
 ../Asteroids/Vendor/assimp/include/assimp/types.h
@@ -1812,6 +1818,14 @@ intrin.h
 arm_neon.h
 -
 
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/asteroid.cpp
+asteroid.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/asteroid.hpp
+
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/collison.cpp
+collision.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/collision.hpp
+
 /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/main.cpp
 cstdio
 -
@@ -1834,6 +1848,14 @@ asteroid.hpp
 textRenderer.hpp
 /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.hpp
 
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/mesh.cpp
+mesh.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/mesh.hpp
+
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/model.cpp
+model.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/model.hpp
+
 /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/projectile.cpp
 glad/glad.h
 -
@@ -1849,6 +1871,44 @@ GLFW/glfw3.h
 -
 projectile.hpp
 /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/projectile.hpp
+
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/shader.cpp
+shader.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/shader.hpp
+unistd.h
+-
+string
+-
+fstream
+-
+sstream
+-
+iostream
+-
+
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/spaceShip.cpp
+spaceShip.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/spaceShip.hpp
+shader.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/shader.hpp
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+stb_image.h
+-
+iostream
+-
+
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/stb_image.cpp
+stb_image.h
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/stb_image.h
+
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.cpp
+textRenderer.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.hpp
 
 Asteroids/Vendor/assimp/include/assimp/config.h
 

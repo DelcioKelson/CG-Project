@@ -80,7 +80,7 @@ namespace TextRenders {
         glBindBuffer(GL_ARRAY_BUFFER, 0);
         glBindVertexArray(0);
     }
-
+        
     void TextRenderer::renderText(std::string text, float x, float y, float scale, glm::vec3 color)
     {
         // Activate corresponding render state	

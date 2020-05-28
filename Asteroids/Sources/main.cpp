@@ -19,7 +19,7 @@ using namespace SpaceShips;
 
 TextRenderer *textDisplay;
 
-float shipRadius = 0.20;
+float shipRadius = 0.20; // Area of Collision, based in the center
 
 const float mWidth = 1024;
 const float mHeight = 578;
@@ -29,10 +29,10 @@ float lastKeyPressTimestamp = 0;
 const int GAME_MAX_DIFFFICULTY = 2;
 const int GAME_MAX_LIVES = 3;
 const float MENU_KEY_PRESS_COOLDOWN = 0.2;
-const int GAME_SUPER_PROJECTILES = 10;
+const int GAME_SUPER_PROJECTILES = 10; // Limiting super projectiles
 
 int lives = GAME_MAX_LIVES;
-int superProjectiles = GAME_SUPER_PROJECTILES;
+int superProjectiles = GAME_SUPER_PROJECTILES; 
 
 SpaceShips::SpaceShip *spaceShip;
 
@@ -49,6 +49,7 @@ enum GameState
 GameState State = GAME_MENU;
 int difficulty = 1;
 
+// Swap between states
 void updateGameState(GameState state)
 {
     State = state;
@@ -56,7 +57,7 @@ void updateGameState(GameState state)
     switch (state)
     {
     case GAME_ACTIVE:
-
+        // Reset the game
         score = 0.0;
         lives = GAME_MAX_LIVES;
         superProjectiles = GAME_SUPER_PROJECTILES;
@@ -70,6 +71,7 @@ void updateGameState(GameState state)
     }
 }
 
+// Load the Objects
 void Init()
 {
     Asteroids::loadModel("../Asteroids/Objects/asteroid/asteroid.obj");
@@ -78,9 +80,10 @@ void Init()
     spaceShip = new SpaceShip("../Asteroids/Shaders/space_ship.vs", "../Asteroids/Shaders/space_ship.fs");
 }
 
+// Verify if SpaceShip collide with Asteroids
 void checkShipCollisions()
 {
-    vector<Asteroid *> *asteroids = getAsteroids();
+    vector<Asteroid *> *asteroids = getAsteroids(); // Obtain a Vector of all Asteroids
 
     for (unsigned long int i = 0; i < asteroids->size(); i++)
     {
@@ -104,16 +107,18 @@ void checkShipCollisions()
     }
 }
 
+// Verify if Projectiles collide with Asteroids
 void checkProjectileCollisions()
 {
-    vector<Projectile *> *projectiles = Projectiles::getProjectiles();
-    vector<Asteroid *> *asteroids = Asteroids::getAsteroids();
+    vector<Projectile *> *projectiles = Projectiles::getProjectiles(); // Obtain a Vector of all Projectiles
+    vector<Asteroid *> *asteroids = Asteroids::getAsteroids(); // Obtain a Vector of all Asteroids
 
-    vector<Asteroid *> aCollisions;
-    vector<Projectile *> pCollisions;
+    vector<Asteroid *> aCollisions; // All asteroids who collided
+    vector<Projectile *> pCollisions; // All projectiles who collided
 
     AABB pHitBox = projectileHitbox();
 
+    // Detect all asteroids and projectiles who collide
     for (long unsigned int i = 0; i < projectiles->size(); i++)
     {
         for (long unsigned int j = 0; j < asteroids->size(); j++)
@@ -129,6 +134,7 @@ void checkProjectileCollisions()
 
                 float minDistanceForImpact = asteroids->at(i)->hitBox.max.x + pHitBox.max.x;
 
+                //Verify if collide
                 if (minDistanceForImpact > distance)
                 {
                     aCollisions.push_back(asteroids->at(j));
@@ -142,6 +148,7 @@ void checkProjectileCollisions()
         }
     }
 
+    // Destroy Projectiles
     for (Projectile *collision : pCollisions)
     {
         for (long unsigned int i = 0; i < projectiles->size(); i++)
@@ -154,6 +161,7 @@ void checkProjectileCollisions()
         }
     }
 
+    // Destroy Asteroids
     for (Asteroid *collision : aCollisions)
     {
         for (long unsigned int i = 0; i < asteroids->size(); i++)
@@ -168,14 +176,16 @@ void checkProjectileCollisions()
     }
 }
 
+// Verify if Asteroids collide with other Asteroids and changes the trajectory
 void checkAsteroidCollisions()
 {
-    vector<Asteroid *> *asteroids = getAsteroids();
+    vector<Asteroid *> *asteroids = getAsteroids(); // Obtain a Vector of all Asteroids
 
     for (long unsigned int a1 = 0; a1 < asteroids->size(); a1++)
     {
         for (long unsigned int a2 = 0; a2 < asteroids->size(); a2++)
         {
+            // Optimize the search avoiding repeated cases
             if (a1 <= a2)
                 continue;
 
@@ -186,6 +196,7 @@ void checkAsteroidCollisions()
 
             float minDistanceForImpact = asteroids->at(a1)->hitBox.max.x + asteroids->at(a2)->hitBox.max.x;
 
+            //Verify if collide
             if (minDistanceForImpact >= distance)
             {
                 // FORMULA: V - 2*(V dot N)*N
@@ -210,10 +221,12 @@ void checkAsteroidCollisions()
     }
 }
 
+// Renderization of the whole program
 void Render()
 {
     switch (State)
     {
+        //Renderization of Game
     case GAME_ACTIVE:
 
         checkProjectileCollisions();
@@ -237,7 +250,7 @@ void Render()
         }
 
         break;
-
+        // Renderization of Menu
     case GAME_MENU:
 
         textDisplay->renderText("Press ENTER to start", 250.0f, mHeight / 2, 1.0f);
@@ -249,7 +262,7 @@ void Render()
             1.5f,
             difficulty == 1 ? glm::vec3(0.0, 0.5, 0.0) : glm::vec3(0.5, 0.0, 0.0));
         break;
-
+        // Renderization of Score
     case GAME_OVER:
 
         textDisplay->renderText("GAME OVER", 250.0f, mHeight / 2, 1.0f, glm::vec3(0.0, 0.5, 0.0));
@@ -267,10 +280,12 @@ void Render()
     }
 }
 
+// Manipulation of the Game
 void ProcessInput(GLFWwindow *window)
 {
     switch (State)
     {
+        //Movement of SpaceShip
     case GAME_ACTIVE:
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         {
@@ -298,6 +313,7 @@ void ProcessInput(GLFWwindow *window)
         }
 
         break;
+        // Select GameMode
     case GAME_MENU:
 
         if (glfwGetTime() < lastKeyPressTimestamp + MENU_KEY_PRESS_COOLDOWN)
@@ -322,6 +338,7 @@ void ProcessInput(GLFWwindow *window)
 
         break;
 
+        // Restart the Game
     case GAME_OVER:
 
         if (glfwGetTime() < lastKeyPressTimestamp + MENU_KEY_PRESS_COOLDOWN)
@@ -336,8 +353,11 @@ void ProcessInput(GLFWwindow *window)
         break;
     }
 }
+
+ // Read events of keyboard
 void key_callback(GLFWwindow *window, int key, int scancode, int action, int mods)
 {
+    //Activation of super projectile
     if (key == GLFW_KEY_S && action == GLFW_PRESS && superProjectiles != 0)
     {
         superProjectiles--;
@@ -375,6 +395,7 @@ int main()
 
     // Create Context and Load OpenGL Functions
     glfwMakeContextCurrent(window);
+    // Set the key callback
     glfwSetKeyCallback(window, key_callback);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))

@@ -1,6 +1,8 @@
 #include "collision.hpp"
 
 namespace Collision {
+
+    // Calculate hitbox
     AABB getAABB(const Mesh& mesh, double scale)
     {
         AABB hitBox;

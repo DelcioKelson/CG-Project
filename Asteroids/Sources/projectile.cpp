@@ -106,6 +106,7 @@ namespace Projectiles
         return true;
     }
 
+    // Move projectile object
     void Projectile::dislocateProjectile()
     {
         if (projectileMovementTimestamp + PROJECTILE_MOVEMENT_COOLDOWN > glfwGetTime())
@@ -120,17 +121,22 @@ namespace Projectiles
         shader.setFloat("yOffset", yOffSet);
     }
 
+    // Create and load model
     void loadModel(string modelPath)
     {
         model = new Model(modelPath);
         hitBox = getAABB(model->meshes.at(0), PROJECTILE_SCALE);
     }
 
+    // Obtain hitbox of projectile
     AABB projectileHitbox()
     {
         return hitBox;
     }
+    // ------------------------------------------------------------------------
+    // Creation of Projectiles
 
+    // Fire the normal projectile
     bool fireProjectile(float width, float height, float x, float y, float angle)
     {
         if (readyToFire())
@@ -142,6 +148,7 @@ namespace Projectiles
         return false;
     }
 
+    // Fire the super projectile
     bool fireProjectile3(float width, float height, float x, float y, float angle)
     {
         if (readyToFire())
@@ -154,6 +161,7 @@ namespace Projectiles
         }
         return false;
     }
+    // ------------------------------------------------------------------------
 
     void renderProjectiles(float width, float height, Camera camera)
     {
@@ -164,16 +172,19 @@ namespace Projectiles
         }
     }
 
+    // Verify if the Projectile its ready to Fire
     bool readyToFire()
     {
         return (glfwGetTime() > lastProjectileTimestamp + PROJECTILE_SPAWN_COOLDOWN);
     }
 
+    // Obtain Projectiles
     vector<Projectile *> *getProjectiles()
     {
         return &projectiles;
     }
 
+    // Clean all projectiles
     void destroyAll()
     {
         projectiles.clear();

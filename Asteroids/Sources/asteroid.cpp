@@ -50,6 +50,7 @@ namespace Asteroids
         delete model;
     }
 
+    // Load the Asteroid
     void Asteroid::init()
     {
         generateCoordinates();
@@ -118,6 +119,9 @@ namespace Asteroids
         return true;
     }
 
+    // ------------------------------------------------------------------------
+    // Movement of Asteroid 
+
     void Asteroid::rotateAsteroid()
     {
         if ((lastRotationTimestamp + ASTEROID_ROTATION_COOLDOWN) > glfwGetTime())
@@ -137,6 +141,8 @@ namespace Asteroids
         xOffSet += glm::cos(angle) * ASTEROID_MOVEMENT_SPEED*dif;
         yOffSet += glm::sin(angle) * ASTEROID_MOVEMENT_SPEED*dif;
     }
+
+    // ------------------------------------------------------------------------
 
     void loadModel(string modelPath)
     {
@@ -163,6 +169,10 @@ namespace Asteroids
         }
     }
 
+
+    // ------------------------------------------------------------------------
+    // Spawning a Asteroid
+
     bool readyToSpawn()
     {
         return (glfwGetTime() > lastAsteroidTimestamp + ASTEROID_SPAWN_COOLDOWN);
@@ -175,11 +185,15 @@ namespace Asteroids
         angle += glm::pi<float>();
     }
 
+    // ------------------------------------------------------------------------
+
+    // Obtain Asteroid
     vector<Asteroid *> *getAsteroids()
     {
         return &asteroids;
     }
 
+    // Clean all asteroids
     void destroyAll()
     {
         asteroids.clear();

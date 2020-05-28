@@ -4,6 +4,7 @@ Model::Model(string const &path, bool gamma) : gammaCorrection(gamma) {
     loadModel(path);
 }
 
+ // Draw a array of Objects
 void Model::Draw(Shader shader)
 {
     for(unsigned int i = 0; i < meshes.size(); i++) {
@@ -11,6 +12,7 @@ void Model::Draw(Shader shader)
     }
 }
 
+ // Get obj and process it
 void Model::loadModel(string path)
 {
    // read file via ASSIMP
@@ -156,6 +158,7 @@ vector<Texture> Model::loadMaterialTextures(aiMaterial *mat, aiTextureType type,
     return textures;
 }
 
+ // Load texture from file
 unsigned int TextureFromFile(const char *path, const string &directory, bool gamma)
 {
     string filename = string(path);
@@ -165,10 +168,13 @@ unsigned int TextureFromFile(const char *path, const string &directory, bool gam
     glGenTextures(1, &textureID);
 
     int width, height, nrComponents;
+    // Get texture from file
     unsigned char *data = stbi_load(filename.c_str(), &width, &height, &nrComponents, 0);
+ 
     if (data)
     {
         GLenum format;
+        // Select format
         if (nrComponents == 1)
             format = GL_RED;
         else if (nrComponents == 3)
@@ -176,6 +182,7 @@ unsigned int TextureFromFile(const char *path, const string &directory, bool gam
         else if (nrComponents == 4)
             format = GL_RGBA;
 
+        // Load Texture
         glBindTexture(GL_TEXTURE_2D, textureID);
         glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
