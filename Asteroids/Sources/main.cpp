@@ -49,10 +49,6 @@ enum GameState
 GameState State = GAME_MENU;
 int difficulty = 1;
 
-void transferData()
-{
-}
-
 void updateGameState(GameState state)
 {
     State = state;
@@ -273,7 +269,6 @@ void Render()
 
 void ProcessInput(GLFWwindow *window)
 {
-    int aux = 0;
     switch (State)
     {
     case GAME_ACTIVE:

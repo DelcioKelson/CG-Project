@@ -1834,5 +1834,21 @@ asteroid.hpp
 textRenderer.hpp
 /home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/textRenderer.hpp
 
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/projectile.cpp
+glad/glad.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+glm/gtc/matrix_access.hpp
+-
+GLFW/glfw3.h
+-
+projectile.hpp
+/home/ferramenta/Documents/3º2º/CG/CG-Project/Asteroids/Sources/projectile.hpp
+
 Asteroids/Vendor/assimp/include/assimp/config.h
 

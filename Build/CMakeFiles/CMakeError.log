@@ -614,3 +614,189 @@ make[1]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Buil
 
 
 
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6cef2/fast && make[1]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_6cef2.dir/build.make CMakeFiles/cmTC_6cef2.dir/build
+make[2]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6cef2.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_6cef2.dir/src.c.o   -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6cef2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cef2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_6cef2.dir/src.c.o  -o cmTC_6cef2 
+/usr/bin/ld: CMakeFiles/cmTC_6cef2.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_6cef2.dir/build.make:87: cmTC_6cef2] Error 1
+make[2]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_6cef2/fast] Error 2
+make[1]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eaed7/fast && make[1]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_eaed7.dir/build.make CMakeFiles/cmTC_eaed7.dir/build
+make[2]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eaed7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_eaed7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eaed7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eaed7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_eaed7.dir/CheckFunctionExists.c.o  -o cmTC_eaed7  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_eaed7.dir/build.make:87: cmTC_eaed7] Error 1
+make[2]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_eaed7/fast] Error 2
+make[1]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6100a/fast && make[1]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_6100a.dir/build.make CMakeFiles/cmTC_6100a.dir/build
+make[2]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6100a.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_6100a.dir/src.c.o   -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6100a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6100a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_6100a.dir/src.c.o  -o cmTC_6100a 
+/usr/bin/ld: CMakeFiles/cmTC_6100a.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_6100a.dir/build.make:87: cmTC_6100a] Error 1
+make[2]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_6100a/fast] Error 2
+make[1]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_62210/fast && make[1]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_62210.dir/build.make CMakeFiles/cmTC_62210.dir/build
+make[2]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_62210.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_62210.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_62210
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62210.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_62210.dir/CheckFunctionExists.c.o  -o cmTC_62210  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_62210.dir/build.make:87: cmTC_62210] Error 1
+make[2]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_62210/fast] Error 2
+make[1]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7ef8d/fast && make[1]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_7ef8d.dir/build.make CMakeFiles/cmTC_7ef8d.dir/build
+make[2]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ef8d.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_7ef8d.dir/src.c.o   -c /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7ef8d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ef8d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_7ef8d.dir/src.c.o  -o cmTC_7ef8d 
+/usr/bin/ld: CMakeFiles/cmTC_7ef8d.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_7ef8d.dir/build.make:87: cmTC_7ef8d] Error 1
+make[2]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_7ef8d/fast] Error 2
+make[1]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4b19c/fast && make[1]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_4b19c.dir/build.make CMakeFiles/cmTC_4b19c.dir/build
+make[2]: Entering directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b19c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4b19c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4b19c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b19c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_4b19c.dir/CheckFunctionExists.c.o  -o cmTC_4b19c  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_4b19c.dir/build.make:87: cmTC_4b19c] Error 1
+make[2]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_4b19c/fast] Error 2
+make[1]: Leaving directory '/home/ferramenta/Documents/3º2º/CG/CG-Project/Build/CMakeFiles/CMakeTmp'
+
+
+
